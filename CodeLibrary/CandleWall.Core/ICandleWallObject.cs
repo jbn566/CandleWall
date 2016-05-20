@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CandleWall.RepoAzure
+namespace JB2.CandleWall
 {
-    public class Class1
+    public interface ICandleWallObject: JB2.Common.IObject<string,string,string>
     {
     }
 }

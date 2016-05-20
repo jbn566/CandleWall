@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CandleWall.Service
+namespace JB2.CandleWall
 {
-    public class Class1
+    public interface IPlayerRepository : JB2.Common.IRepositoryWithCache<IPlayer,string,string>
     {
+
     }
 }

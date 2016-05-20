@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CandleWall.Core
+namespace JB2.Settings
 {
-    public class Class1
+    public static class CandleWall
     {
     }
 }

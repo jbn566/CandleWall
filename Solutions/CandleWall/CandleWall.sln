@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleWall", "CandleWall\CandleWall.csproj", "{E6024C67-FDF6-4539-9783-A8179BF06739}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleWall.Core", "..\..\CodeLibrary\CandleWall.Core\CandleWall.Core.csproj", "{722B4C4D-6A4A-4022-B209-2A520EFA8A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleWall.RepoAzure", "..\..\CodeLibrary\CandleWall.RepoAzure\CandleWall.RepoAzure.csproj", "{DDDBD943-4722-4659-9EEE-B536F6812E6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleWall.Service", "..\..\CodeLibrary\CandleWall.Service\CandleWall.Service.csproj", "{8874BF13-A667-483B-91A3-867EDDDE6483}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{A3E165B4-4339-4CDA-95D8-6252E5EC2850}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Websites", "Websites", "{C5894455-54E4-439C-8413-C13FBFD6CB01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleWall.io", "..\..\Websites\CandleWall.io\CandleWall.io.csproj", "{1622A8B0-F76D-4846-BE2A-983D25E58632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleWall.api", "..\..\Websites\CandleWall.api\CandleWall.api.csproj", "{1B47658A-1B83-43BF-80AD-1640C4E72762}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +23,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E6024C67-FDF6-4539-9783-A8179BF06739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6024C67-FDF6-4539-9783-A8179BF06739}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6024C67-FDF6-4539-9783-A8179BF06739}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6024C67-FDF6-4539-9783-A8179BF06739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722B4C4D-6A4A-4022-B209-2A520EFA8A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722B4C4D-6A4A-4022-B209-2A520EFA8A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722B4C4D-6A4A-4022-B209-2A520EFA8A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722B4C4D-6A4A-4022-B209-2A520EFA8A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDBD943-4722-4659-9EEE-B536F6812E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDBD943-4722-4659-9EEE-B536F6812E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDBD943-4722-4659-9EEE-B536F6812E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDBD943-4722-4659-9EEE-B536F6812E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8874BF13-A667-483B-91A3-867EDDDE6483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8874BF13-A667-483B-91A3-867EDDDE6483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8874BF13-A667-483B-91A3-867EDDDE6483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8874BF13-A667-483B-91A3-867EDDDE6483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1622A8B0-F76D-4846-BE2A-983D25E58632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1622A8B0-F76D-4846-BE2A-983D25E58632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1622A8B0-F76D-4846-BE2A-983D25E58632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1622A8B0-F76D-4846-BE2A-983D25E58632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B47658A-1B83-43BF-80AD-1640C4E72762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B47658A-1B83-43BF-80AD-1640C4E72762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B47658A-1B83-43BF-80AD-1640C4E72762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B47658A-1B83-43BF-80AD-1640C4E72762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{722B4C4D-6A4A-4022-B209-2A520EFA8A9C} = {A3E165B4-4339-4CDA-95D8-6252E5EC2850}
+		{DDDBD943-4722-4659-9EEE-B536F6812E6F} = {A3E165B4-4339-4CDA-95D8-6252E5EC2850}
+		{8874BF13-A667-483B-91A3-867EDDDE6483} = {A3E165B4-4339-4CDA-95D8-6252E5EC2850}
+		{1622A8B0-F76D-4846-BE2A-983D25E58632} = {C5894455-54E4-439C-8413-C13FBFD6CB01}
+		{1B47658A-1B83-43BF-80AD-1640C4E72762} = {C5894455-54E4-439C-8413-C13FBFD6CB01}
 	EndGlobalSection
 EndGlobal
