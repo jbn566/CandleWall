@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace JB2.CandleWall
 {
-    public interface ICandle : ICandleWallObject
+    public enum CandleState
     {
-        CandleState State { get; set; }
-
-        JB2.Common.IPerson<string> Owner { get; set; }
+        Lit =1,
+        Unlit = 0
     }
 }
